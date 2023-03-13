@@ -2,11 +2,6 @@
   overflow: auto;
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid #ccc;
-}
-
 .no-a-decoration {
   text-decoration: none;
 }
@@ -17,9 +12,4 @@ hr {
 
 .round {
   border-radius: 100%;
-}
-
-.copyright {
-  margin: 3rem 0;
-  text-align: center;
 }

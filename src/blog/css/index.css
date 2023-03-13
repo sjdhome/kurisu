@@ -6,6 +6,7 @@
 @import url(../../css/font.css);
 @import url(../../css/body.css);
 @import url(title-block.css);
+@import url(../../css/better-hr.css);
 
 ul {
   list-style-type: none;
