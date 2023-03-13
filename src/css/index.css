@@ -5,8 +5,4 @@
 @import url(body.css);
 @import url(flex.css);
 @import url(font.css);
-
-main {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
+@import url(copyright.css);

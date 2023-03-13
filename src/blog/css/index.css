@@ -2,21 +2,13 @@
 @import url(block.css);
 @import url(../../css/limit-content-width.css);
 @import url(../../css/copyright.css);
-@import url(../../css/auto-black-font.css);
 @import url(../../css/flex.css);
 @import url(../../css/font.css);
 @import url(../../css/body.css);
-
-main {
-  display: flex;
-}
+@import url(title-block.css);
 
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.date {
-  font-size: small;
 }

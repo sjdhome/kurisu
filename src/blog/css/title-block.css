@@ -1,0 +1,14 @@
+.title-block {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  margin-right: 1rem;
+}
+
+.title-block h1 {
+  font-weight: 500;
+}
+
+.subtitle {
+  margin-left: 0.25rem;
+  margin-right: 0.75rem;
+}

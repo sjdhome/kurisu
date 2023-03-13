@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello world - sjdhome blog</title>
-    <!-- <link rel="stylesheet" href="../css/index.css" /> -->
-    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/post.css" />
   </head>
   <body>
     <header>
-      <div
-        class="flex flex-column limit-content-width"
-        style="padding-top: 5rem; padding-bottom: 3rem; margin-right: 1rem"
-      >
+      <div class="flex flex-column limit-content-width title-block">
         <div class="flex flex-align-center">
           <a href="/blog/">
             <img
@@ -26,27 +22,52 @@
             />
           </a>
           <a href="/blog/" class="black-font no-a-decoration">
-            <h1 style="font-weight: 500">sjdhome blog</h1>
+            <h1>sjdhome blog</h1>
           </a>
         </div>
-        <div style="margin-left: 0.25rem; margin-right: 0.75rem">
-          <p class="no-margin small-font">
-            A blog about web development and other things
-          </p>
+        <div class="subtitle">
+          <span class="small-font">
+            A blog about web development and other things.
+          </span>
         </div>
       </div>
     </header>
     <hr />
-    <main class="limit-content-width">
-      <h2>Hello world</h2>
-      <span class="small-font">2023年3月13日</span>
-      <p>这是使用纯HTML写的一篇文章，没有使用任何框架和构建工具。</p>
-      <p>很多页面样式都没法复用。</p>
-      <div class="block" style="margin-left: -1rem; margin-right: -1rem">
-        <h2>评论区</h2>
-        <ul>
-          <li>sjdhome说：这是一条测试评论。</li>
-        </ul>
+    <main class="limit-content-width flex">
+      <div class="only-block-style" style="flex: 1">
+        <div>
+          <h2>Hello world</h2>
+          <span class="small-font">2023年3月13日</span>
+          <p>这是使用纯HTML写的一篇文章，没有使用任何框架和构建工具。</p>
+          <p>
+            在2023年还手写网页的人应该不多了，很多人都喜欢用React、Vue等前端框架搭建网站。
+          </p>
+          <p>我也曾想直接用那些技术来建设网站，但是遇到了几个问题：</p>
+          <ol>
+            <li>
+              只用React、Vue等框架生成的是客户端渲染(CSR)页面，不方便被搜索引擎收录。
+            </li>
+            <li>
+              使用构建工具，就需要Node.js，就会带上大大的<code>node_modules</code>。
+            </li>
+            <li>
+              使用支持SSR的框架(如Next.js)，会增加项目的复杂性，也不利于微调。
+            </li>
+          </ol>
+          <p>
+            一开始担心，直接手写HTML会不会太麻烦，但是后来发现，用纯HTML写网页也不是很麻烦。部分重复的样式，如顶部标题和导航栏，可以通过完善的CSS
+            <code>class</code>来实现复用，HTML部分也不会太长，不会经常修改。
+          </p>
+          <p>虽然没有组件库加持，但自己手写CSS也能实现不错的效果。</p>
+        </div>
+        <br />
+        <div>
+          <h2>评论区</h2>
+          <p>评论区目前还不存在，以后会慢慢建设的。</p>
+          <!-- <ul>
+            <li>sjdhome说：这是一条测试评论。</li>
+          </ul> -->
+        </div>
       </div>
     </main>
     <footer>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,10 +9,7 @@
   </head>
   <body>
     <header>
-      <div
-        class="flex flex-column limit-content-width"
-        style="padding-top: 5rem; padding-bottom: 3rem; margin-right: 1rem"
-      >
+      <div class="flex flex-column limit-content-width title-block">
         <div class="flex flex-align-center">
           <a href="/blog/">
             <img
@@ -25,55 +22,54 @@
             />
           </a>
           <a href="/blog/" class="black-font no-a-decoration">
-            <h1 style="font-weight: 500">sjdhome blog</h1>
+            <h1>sjdhome blog</h1>
           </a>
         </div>
-        <div style="margin-left: 0.25rem; margin-right: 0.75rem">
-          <p class="no-margin small-font">
-            A blog about web development and other things
-          </p>
+        <div class="subtitle">
+          <span class="small-font">
+            A blog about web development and other things.
+          </span>
         </div>
       </div>
     </header>
     <hr />
-    <main class="limit-content-width">
-      <div style="flex: 4">
-        <div class="block">
-          <h2>
-            <a href="/blog/post/after-reading-zhi-shen-shi-nei.html"
-              >《置身事内》读后感</a
-            >
-          </h2>
-          <span class="small-font">2023年3月13日</span>
-          <p>这是博客的第三篇文章。</p>
-        </div>
-        <div class="block">
-          <h2>
-            <a href="/blog/post/next-js-and-frontend-engineering.html"
-              >Next.js 与前端工程化的关系</a
-            >
-          </h2>
-          <span class="small-font">2023年3月13日</span>
-          <p>这是博客的第二篇文章。</p>
-        </div>
+    <main class="limit-content-width flex">
+      <div style="flex: 2" id="post-list">
         <div class="block">
           <h2><a href="/blog/post/hello-world.html">Hello world</a></h2>
           <span class="small-font">2023年3月13日</span>
-          <p>这是博客的第一篇文章，写于网页设计课。</p>
+          <p>你好，世界！这是本博客的第一篇文章。</p>
         </div>
       </div>
-      <aside class="block" style="flex: 1">
-        <h3 style="margin-top: 0">其他链接</h3>
-        <ul>
-          <li><a alt="index page" href="/">sjdhome - 主页</a></li>
-          <li>
-            <a alt="index page" href="https://github.com/sjdhome">GitHub</a>
-          </li>
-        </ul>
+      <aside style="flex: 1">
+        <div class="block">
+          <h3>搜索</h3>
+          <input
+            type="text"
+            placeholder="文章名称"
+            oninput="onSearch(event)"
+            style="width: 95%"
+          />
+        </div>
+        <div class="block">
+          <h3>导航栏</h3>
+          <ul>
+            <li><a alt="index page" href="/">关于我</a></li>
+            <li>
+              <a alt="index page" href="https://github.com/sjdhome">GitHub</a>
+            </li>
+          </ul>
+        </div>
       </aside>
     </main>
     <footer>
       <div class="copyright">sjdhome &copy; 2023</div>
     </footer>
+    <script
+      type="module"
+      async
+      crossorigin="anonymous"
+      src="js/index.js"
+    ></script>
   </body>
 </html>

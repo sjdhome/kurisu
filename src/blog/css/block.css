@@ -1,8 +1,13 @@
+.block,
+.only-block-style {
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  border: 1px solid transparent;
+}
+
 .block {
   border: 1px solid #ccc;
   border-radius: 12px;
-  padding: 1rem;
-  margin: 1rem 0.5rem;
 }
 
 .block {
@@ -14,8 +19,12 @@
   box-shadow: 0px 5px 16px lightgray;
 }
 
-.block h2 {
+.block h1,
+.block h2,
+.block h3,
+.only-block-style h1,
+.only-block-style h2,
+.only-block-style h3 {
   font-weight: 700;
-  margin-top: 0.5rem;
-  margin-bottom: 0;
+  margin: 0.5rem 0;
 }

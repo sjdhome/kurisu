@@ -1,9 +1,0 @@
-.black-font {
-  color: black;
-}
-
-@media (perfer-color-scheme: dark) {
-  .black-font {
-    color: white;
-  }
-}
