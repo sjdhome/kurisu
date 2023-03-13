@@ -1,10 +1,10 @@
 @import url(global.css);
 @import url(black-bar.css);
-
-.footer {
-  margin-top: 3rem;
-  text-align: center;
-}
+@import url(limit-content-width.css);
+@import url(copyright.css);
+@import url(body.css);
+@import url(flex.css);
+@import url(font.css);
 
 main {
   margin-left: 0.5rem;

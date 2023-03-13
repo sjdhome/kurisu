@@ -1,3 +1,12 @@
+@import url(../../css/global.css);
+@import url(block.css);
+@import url(../../css/limit-content-width.css);
+@import url(../../css/copyright.css);
+@import url(../../css/auto-black-font.css);
+@import url(../../css/flex.css);
+@import url(../../css/font.css);
+@import url(../../css/body.css);
+
 main {
   display: flex;
 }
