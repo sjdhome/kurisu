@@ -14,6 +14,6 @@
   flex-direction: row;
 }
 
-.flex-column {
+.flex-vertical {
   flex-direction: column;
 }
