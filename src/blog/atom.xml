@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://sjdhome.com/blog/</id>
+    <title>sjdhome blog</title>
+    <updated>2023-03-13T15:00:00.000Z</updated>
+    <author>
+        <name>sjdhome</name>
+        <uri>https://sjdhome.com/</uri>
+    </author>
+    <link rel="alternate" href="https://sjdhome.com/blog/"/>
+    <link rel="self" href="https://sjdhome.com/blog/atom.xml"/>
+    <subtitle>A blog about web development and other things.</subtitle>
+    <logo>https://sjdhome.com/blog/img/earth.jpg</logo>
+    <icon>https://sjdhome.com/favicon.ico</icon>
+    <rights>sjdhome © 2023</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello world]]></title>
+        <id>https://sjdhome.com/blog/post/hello-world</id>
+        <link href="https://sjdhome.com/blog/post/hello-world"/>
+        <updated>2023-03-13T15:00:00.000Z</updated>
+        <summary type="html"><![CDATA[你好，世界！这是本博客的第一篇文章。]]></summary>
+        <content type="html"><![CDATA[<p>请前往 <a href="https://sjdhome.com/blog/post/hello-world">https://sjdhome.com/blog/post/hello-world</a> 阅读全文</p>]]></content>
+        <category label="无"/>
+        <published>2023-03-13T15:00:00.000Z</published>
+    </entry>
+</feed>
