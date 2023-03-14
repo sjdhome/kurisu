@@ -1,7 +1,5 @@
 .limit-content-width {
   --content-width: 1024px;
-  margin-left: 1rem;
-  margin-right: 1rem;
   padding-left: calc((100vw - var(--content-width)) / 2);
   padding-right: calc((100vw - var(--content-width)) / 2);
 }

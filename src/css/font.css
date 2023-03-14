@@ -6,12 +6,16 @@
   font-size: small;
 }
 
-.black-font {
+.auto-color-font {
   color: black;
 }
 
 @media (perfer-color-scheme: dark) {
-  .black-font {
+  .auto-color-font {
     color: white;
   }
+}
+
+.white-font {
+  color: white;
 }
