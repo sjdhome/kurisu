@@ -50,8 +50,9 @@
             Linux然后chroot进去，但要注意剩余容量。
           </p>
           <p>
-            默认IPv6的FORWARD是全部DROP的，输入ip6tables -I FORWARD -j
-            ACCEPT来放行。这样路由器下的设备分配到的IPv6的地址在公网就可以连通了。但这样会导致包括路由器本身及其下的设备在内的所有设备都会暴露在公网上，注意安全。
+            默认IPv6的FORWARD是全部DROP的，输入<code
+              >ip6tables -I FORWARD -j ACCEPT</code
+            >来放行。这样路由器下的设备分配到的IPv6的地址在公网就可以连通了。但这样会导致包括路由器本身及其下的设备在内的所有设备都会暴露在公网上，注意安全。
           </p>
           <p>
             <code>debug.asp</code
