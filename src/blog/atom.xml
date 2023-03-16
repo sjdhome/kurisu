@@ -14,6 +14,16 @@
     <icon>https://sjdhome.com/favicon.ico</icon>
     <rights>sjdhome © 2023</rights>
     <entry>
+        <title type="html"><![CDATA[H3C Magic RC3000的相关信息]]></title>
+        <id>https://sjdhome.com/blog/post/h3c-magic-rc3000</id>
+        <link href="https://sjdhome.com/blog/post/h3c-magic-rc3000"/>
+        <updated>2023-03-16T19:55:00.000Z</updated>
+        <summary type="html"><![CDATA[在实践中掌握的一些关于H3C Magic RC3000电信官方固件的相关信息。]]></summary>
+        <content type="html"><![CDATA[<p>请前往 <a href="https://sjdhome.com/blog/post/h3c-magic-rc3000">https://sjdhome.com/blog/post/h3c-magic-rc3000</a> 阅读全文</p>]]></content>
+        <category label="无"/>
+        <published>2023-03-16T19:55:00.000Z</published>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Hello world]]></title>
         <id>https://sjdhome.com/blog/post/hello-world</id>
         <link href="https://sjdhome.com/blog/post/hello-world"/>
