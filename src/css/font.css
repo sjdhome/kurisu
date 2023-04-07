@@ -10,7 +10,7 @@
   color: black;
 }
 
-@media (perfer-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .auto-color-font {
     color: white;
   }

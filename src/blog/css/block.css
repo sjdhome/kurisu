@@ -11,12 +11,12 @@
 }
 
 .block {
-  box-shadow: 0px 0px 0px lightgray;
+  box-shadow: 0 0 0 lightgray;
   transition: box-shadow 0.3s ease-in-out;
 }
 .block:hover,
 .nice-shadow {
-  box-shadow: 0px 5px 16px lightgray;
+  box-shadow: 0 5px 16px lightgray;
 }
 
 .block h1,

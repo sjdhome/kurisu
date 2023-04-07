@@ -81,22 +81,24 @@
       <aside style="flex: 1">
         <div class="block">
           <h3>搜索</h3>
-          <input type="text" placeholder="文章标题" oninput="onSearch(event)" />
+          <label>
+            <input type="text" placeholder="文章标题" id="search" />
+          </label>
         </div>
         <div class="block">
           <h3>导航栏</h3>
           <ul>
-            <li><a alt="index page" href="/">🌏 关于我</a></li>
+            <li><a href="/">🌏 关于我</a></li>
             <li>
-              <a alt="index page" href="https://github.com/sjdhome"
+              <a href="https://github.com/sjdhome"
                 >🐱 GitHub</a
               >
             </li>
             <li>
-              <a alt="e-mail" href="mailto:i@sjdhome.com">✉️ E-mail</a>
+              <a href="mailto:i@sjdhome.com">✉️ E-mail</a>
             </li>
             <li>
-              <a alt="rss feed" href="/blog/atom.xml">📰 RSS</a>
+              <a href="/blog/atom.xml">📰 RSS</a>
             </li>
           </ul>
         </div>
