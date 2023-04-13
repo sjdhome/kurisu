@@ -10,11 +10,12 @@
   color: black;
 }
 
-@media (prefers-color-scheme: dark) {
+/* I haven't finish dark mode, so disable it. */
+/* @media (prefers-color-scheme: dark) {
   .auto-color-font {
     color: white;
   }
-}
+} */
 
 .white-font {
   color: white;
