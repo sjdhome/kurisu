@@ -4,7 +4,7 @@ document.getElementById("search").addEventListener("input", (event) => {
     for (const post of postList.children) {
         const title = post.getElementsByTagName("h2")[0].innerText.toLowerCase();
         if (title.indexOf(search) > -1) {
-            post.style.display = "block";
+            post.style.removeProperty("display");
         } else {
             post.style.display = "none";
         }
