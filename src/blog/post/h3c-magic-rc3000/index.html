@@ -45,29 +45,27 @@
     <hr />
     <main class="limit-content-width flex">
       <div class="only-block-style" style="flex: 1">
-        <div>
-          <h2>H3C Magic RC3000的相关信息</h2>
-          <span class="small-font">2023年3月16日</span>
-          <p>
-            在登录路由器之后，将网址最后的<code>index.asp</code>改为<code>debug.asp</code>可以进入调试界面。
-          </p>
-          <p>
-            调试界面可以开启telnet。telnet的密码就是路由器后台密码，进入后输入<code>debugs</code>进入Linux终端。
-          </p>
-          <p>
-            操作系统是版本很老的OpenWRT。存储空间也所剩无几，只有<code>/plugins</code>目录还留有几十MB的空间。想提升可玩性的话可以在<code>plugins</code>目录下搞一个Alpine
-            Linux然后chroot进去，但要注意剩余容量。
-          </p>
-          <p>
-            默认IPv6的FORWARD是全部DROP的，输入<code
-              >ip6tables -I FORWARD -j ACCEPT</code
-            >来放行。这样路由器下的设备分配到的IPv6的地址在公网就可以连通了。但这样会导致包括路由器本身及其下的设备在内的所有设备都会暴露在公网上，注意安全。
-          </p>
-          <p>
-            <code>debug.asp</code
-            >下的NAT三元组设定疑似无效，原因未知。猜测可能是光猫提前做了NAT转换。
-          </p>
-        </div>
+        <h2>H3C Magic RC3000的相关信息</h2>
+        <span class="small-font">2023年3月16日</span>
+        <p>
+          在登录路由器之后，将网址最后的<code>index.asp</code>改为<code>debug.asp</code>可以进入调试界面。
+        </p>
+        <p>
+          调试界面可以开启telnet。telnet的密码就是路由器后台密码，进入后输入<code>debugs</code>进入Linux终端。
+        </p>
+        <p>
+          操作系统是版本很老的OpenWRT。存储空间也所剩无几，只有<code>/plugins</code>目录还留有几十MB的空间。想提升可玩性的话可以在<code>plugins</code>目录下搞一个Alpine
+          Linux然后chroot进去，但要注意剩余容量。
+        </p>
+        <p>
+          默认IPv6的FORWARD是全部DROP的，输入<code
+            >ip6tables -I FORWARD -j ACCEPT</code
+          >来放行。这样路由器下的设备分配到的IPv6的地址在公网就可以连通了。但这样会导致包括路由器本身及其下的设备在内的所有设备都会暴露在公网上，注意安全。
+        </p>
+        <p>
+          <code>debug.asp</code
+          >下的NAT三元组设定疑似无效，原因未知。猜测可能是光猫提前做了NAT转换。
+        </p>
       </div>
     </main>
     <footer>
