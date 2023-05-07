@@ -14,9 +14,15 @@
   box-shadow: 0 0 0 lightgray;
   transition: box-shadow 0.3s ease-in-out;
 }
-.block:hover,
+
 .nice-shadow {
   box-shadow: 0 5px 16px lightgray;
+}
+
+@media (pointer: fine) {
+  .block:hover {
+    box-shadow: 0 5px 16px lightgray;
+  }
 }
 
 .block h1,
@@ -30,6 +36,6 @@
 }
 
 .big-block {
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   font-size: larger;
 }
