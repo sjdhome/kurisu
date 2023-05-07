@@ -1,60 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
+
 <head>
     <title>sjdhome</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="the index page of sjdhome">
-    <link rel="stylesheet" href="/css/global.css"/>
-    <link rel="stylesheet" href="/css/black-bar.css"/>
-    <link rel="stylesheet" href="/css/limit-content-width.css"/>
-    <link rel="stylesheet" href="/css/copyright.css"/>
-    <link rel="stylesheet" href="/css/body.css"/>
-    <link rel="stylesheet" href="/css/flex.css"/>
-    <link rel="stylesheet" href="/css/font.css"/>
-    <link rel="stylesheet" href="/css/copyright.css"/>
-    <link rel="stylesheet" href="/css/margin.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="我的网站主页">
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/copyright.css" />
+    <link rel="stylesheet" href="/css/body.css" />
+    <link rel="stylesheet" href="/css/flex.css" />
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/copyright.css" />
+    <link rel="stylesheet" href="/css/margin.css" />
+    <link rel="stylesheet" href="/css/button.css" />
+    <link rel="stylesheet" href="/blog/css/block.css" />
+    <link rel="stylesheet" href="/css/color.css" />
 </head>
+
 <body>
-<nav class="black-bar flex flex-vertical-center limit-content-width">
-    <div class="flex flex-vertical-center">
-        <a class="no-a-decoration white-font large-font" href="/">🌏 sjdhome</a>
-        <a class="no-a-decoration white-font small-font" href="/blog/">🗒️ blog</a>
-        <a class="no-a-decoration white-font small-font" href="https://github.com/sjdhome">🐱 github</a>
-        <a class="no-a-decoration white-font small-font" href="mailto:sjdhoome@gmail.com">✉️ e-mail</a>
-        <a class="no-a-decoration white-font small-font" href="/index.zh.html">🌐 中文</a>
-    </div>
-</nav>
-<main class="limit-content-width margin-lr">
-    <h1>Hello!</h1>
-    <p>
-        I am a student from <a target="_blank" href="https://www.njxzc.edu.cn">Nanjing Xiaozhuang University</a>. I am
-        currently
-        majoring in Data Science and Big Data Technology.
-    </p>
-    <p>For privacy, I use <strong>sjdhome</strong> as my nickname.</p>
-    <h2>What am I doing?</h2>
-    <ul>
-        <li>Studying university courses.</li>
-        <li>Learning fashion programming language.</li>
-        <li>Building my website.</li>
-    </ul>
-    <h2>Which language do I use?</h2>
-    <ol>
-        <li>Chinese (simplified) - almost 73%</li>
-        <li>English - 24%</li>
-        <li>Japanese - about 3%, for anime 😊</li>
-    </ol>
-    <h2>Which programming language do I use?</h2>
-    <ol>
-        <li>Go</li>
-        <li>C/C++</li>
-        <li>Javascript</li>
-    </ol>
-</main>
-<footer>
-    <div class="copyright">sjdhome &copy; 2023</div>
-</footer>
-<script type="module" async crossorigin="anonymous" src="js/index.js"></script>
+    <main class="margin-top-8rem">
+        <div class="flex flex-vertical align-items-center">
+            <img src="img/earth.jpg" alt="My avatar" class="round nice-shadow" width="128" height="128">
+            <h1 class="margin-bottom-0">sjdhome</h1>
+            <p>海纳百川，有容乃大</p>
+        </div>
+        <div class="flex justify-content-center">
+            <a class="big-block block initial-font no-text-decoration bg-color-accent" href="/blog/post/about-me">关于我</a>
+            <a class="big-block block initial-font no-text-decoration" href="/blog">博客</a>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">sjdhome &copy; 2023</div>
+      </footer>
 </body>
+
 </html>

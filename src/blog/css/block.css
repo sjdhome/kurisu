@@ -28,3 +28,8 @@
   font-weight: 700;
   margin: 0.5rem 0;
 }
+
+.big-block {
+  padding: 1rem 2rem;
+  font-size: larger;
+}
