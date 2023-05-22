@@ -6,7 +6,7 @@
 
 @media (prefers-color-scheme: dark) {
   .title-block {
-    background-color: #252d38;
+    background-color: var(--bg-color);
   }
 }
 

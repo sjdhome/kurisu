@@ -5,3 +5,16 @@
 .round {
   border-radius: 100%;
 }
+
+:root {
+  --bg-color: white;
+  --bg-color-deep: white;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #252d38;
+    --bg-color-deep: #181c27;
+  }
+}

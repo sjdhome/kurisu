@@ -15,7 +15,7 @@ a:active {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #181c27;
+    background-color: var(--bg-color-deep);
     color: white;
   }
 
