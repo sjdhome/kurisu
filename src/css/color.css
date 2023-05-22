@@ -2,4 +2,8 @@
   background-color: dodgerblue;
 }
 
-.bg-color-normal {}
+@media (prefers-color-scheme: dark) {
+  .bg-color-accent {
+    background-color: deepskyblue;
+  }
+}

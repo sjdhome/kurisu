@@ -6,3 +6,9 @@ code {
   margin: 0 0.25rem;
   border-radius: 6px;
 }
+
+@media (prefers-color-scheme: dark) {
+  code {
+    background-color: #333;
+  }
+}

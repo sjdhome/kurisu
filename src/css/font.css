@@ -2,23 +2,8 @@
   font-size: large;
 }
 
-.auto-color-font {
-  color: black;
-}
-
-/* I haven't finish dark mode, so disable it. */
-/* @media (prefers-color-scheme: dark) {
-  .auto-color-font {
-    color: white;
-  }
-} */
-
 .white-font {
   color: white;
-}
-
-.initial-font-color {
-  color: initial;
 }
 
 .no-text-decoration {

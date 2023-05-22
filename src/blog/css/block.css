@@ -3,23 +3,35 @@
   padding: 1rem;
   margin: 1rem 0.5rem;
   border: 1px solid transparent;
+  background-color: white;
 }
 
 .block {
-  border: 1px solid #ccc;
   border-radius: 12px;
 }
 
-.block {
-  box-shadow: 0 0 0 lightgray;
-  transition: box-shadow 0.3s ease-in-out;
+@media (prefers-color-scheme: dark) {
+  .block {
+    background-color: #252d38;
+  }
 }
 
-.nice-shadow {
-  box-shadow: 0 5px 16px lightgray;
+@media (prefers-color-scheme: light) {
+  .block {
+    border: 1px solid #ccc;
+  }
+
+  .block {
+    box-shadow: 0 0 0 lightgray;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .nice-shadow {
+    box-shadow: 0 5px 16px lightgray;
+  }
 }
 
-@media (pointer: fine) {
+@media (prefers-color-scheme: light) and (pointer: fine) {
   .block:hover {
     box-shadow: 0 5px 16px lightgray;
   }

@@ -1,7 +1,13 @@
 .title-block {
   padding-top: 5rem;
   padding-bottom: 3rem;
-  margin: 0 1.5rem;
+  background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .title-block {
+    background-color: #252d38;
+  }
 }
 
 .title-block h1 {
