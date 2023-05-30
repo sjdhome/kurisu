@@ -15,7 +15,7 @@
     <rights>sjdhome © 2023</rights>
     <entry>
         <title type="html"><![CDATA[如何手动安装rust-src]]></title>
-        <id>https://sjdhome.com/blog/post/attributes-of-addictive-games</id>
+        <id>https://sjdhome.com/blog/post/how-to-manual-install-rust-src</id>
         <link href="https://sjdhome.com/blog/post/how-to-manual-install-rust-src"/>
         <updated>2023-05-30T14:00:00.000Z</updated>
         <summary type="html"><![CDATA[解决Visual Studio Code中rust-analyzer报错。]]></summary>
