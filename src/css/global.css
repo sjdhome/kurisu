@@ -18,3 +18,8 @@
     --bg-color-deep: #181c27;
   }
 }
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
