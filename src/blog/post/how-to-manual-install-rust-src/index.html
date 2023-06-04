@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="/css/better-hr.css" />
   <link rel="stylesheet" href="/blog/css/post.css" />
   <link rel="stylesheet" href="/css/margin.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
 
 <body>
@@ -49,7 +52,9 @@
       <p>最后一句<em>try installing the Rust source the same way you installed
           rustc</em>是解决问题的关键。对于如何修复这个错误，Google并不能找出直接的答案。大多数解答都是针对rustup安装错误，安装rust-src的方法也只有使用rustup。</p>
       <h2>解决方法</h2>
-      <p>在<a href="https://forge.rust-lang.org/infra/other-installation-methods.html#source-code">Standalone installers下载页面的底部</a>，可以下载对应当前版本的rust-src的压缩包。之后需要在<code><em>Rust安装位置</em>/lib/rustlib/</code>下创建一个<code>src</code>文件夹，然后将压缩包里的<code>rust-<em>版本号</em>-src</code>文件夹解压到<code>src</code>目录下，并将<code>rust-<em>版本号</em>-src</code>重命名为<code>rust</code>。</p>
+      <p>在<a href="https://forge.rust-lang.org/infra/other-installation-methods.html#source-code">Standalone
+          installers下载页面的底部</a>，可以下载对应当前版本的rust-src的压缩包。之后需要在<code><em>Rust安装位置</em>/lib/rustlib/</code>下创建一个<code>src</code>文件夹，然后将压缩包里的<code>rust-<em>版本号</em>-src</code>文件夹解压到<code>src</code>目录下，并将<code>rust-<em>版本号</em>-src</code>重命名为<code>rust</code>。
+      </p>
       <p><img src="../../img/rust-src-result.png" alt="Rust\lib\rustlib\src\rust" width="707" height="509" /></p>
     </div>
   </main>
