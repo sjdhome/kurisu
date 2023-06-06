@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.sjdhome.com/</loc>
+  </url>
+  <url>
+    <loc>https://www.sjdhome.com/blog/</loc>
+  </url>
+  <url>
+    <loc>https://www.sjdhome.com/blog/post/about-me/</loc>
+    <lastmod>2023-05-07T20:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.sjdhome.com/blog/post/hello-world/</loc>
+    <lastmod>2023-03-13T15:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sjdhome.com/blog/post/h3c-magic-rc3000/</loc>
+    <lastmod>2023-03-16T19:55:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sjdhome.com/blog/post/feelings-about-plastic-memories/</loc>
+    <lastmod>2023-03-25T18:55:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sjdhome.com/blog/post/the-loss-of-time-flies/</loc>
+    <lastmod>2023-03-25T20:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sjdhome.com/blog/post/attributes-of-addictive-games/</loc>
+    <lastmod>2023-05-23T21:30:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sjdhome.com/blog/post/how-to-manual-install-rust-src/</loc>
+    <lastmod>2023-05-30T14:00:00.000Z</lastmod>
+  </url>
+</urlset>
