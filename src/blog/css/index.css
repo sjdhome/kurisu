@@ -12,4 +12,9 @@ main {
   main {
     flex-direction: row;
   }
+
+  .stick-to-top {
+    position: sticky;
+    top: 16px;
+  }
 }
