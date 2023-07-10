@@ -39,9 +39,7 @@
 .block h1,
 .block h2,
 .block h3,
-.only-block-style h1,
-.only-block-style h2,
-.only-block-style h3 {
+.only-block-style h1 {
   font-weight: 700;
   margin: 0.5rem 0;
 }

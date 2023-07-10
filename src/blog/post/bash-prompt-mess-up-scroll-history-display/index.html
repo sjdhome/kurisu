@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="在修改过PS1变量后，使用上下方向键翻阅历史命令时可能会出现命令将提示符覆盖掉的情况。" />
+  <title>解决修改Bash Prompt后翻阅历史命令时显示错位 - sjdhome blog</title>
+  <link rel="stylesheet" href="/css/flex.css" />
+  <link rel="stylesheet" href="/css/limit-content-width.css" />
+  <link rel="stylesheet" href="/css/font.css" />
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/blog/css/block.css" />
+  <link rel="stylesheet" href="/blog/css/title-block.css" />
+  <link rel="stylesheet" href="/css/body.css" />
+  <link rel="stylesheet" href="/css/copyright.css" />
+  <link rel="stylesheet" href="/css/code.css" />
+  <link rel="stylesheet" href="/css/better-hr.css" />
+  <link rel="stylesheet" href="/blog/css/post.css" />
+  <link rel="stylesheet" href="/css/margin.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+  <header>
+    <div class="flex flex-vertical limit-content-width title-block">
+      <div class="flex align-items-center margin-lr-1dot5">
+        <a href="/blog/">
+          <picture>
+            <source srcset="/img/earth.webp">
+            <source srcset="/img/earth.jpg">
+            <img src="/img/earth.jpg" alt="avatar" width="64" height="64" class="round" />
+          </picture>
+        </a>
+        <a href="/blog/" class="title-text no-a-decoration">sjdhome blog</a>
+      </div>
+      <div class="subtitle margin-lr-1dot5">
+        <small>A blog about web development and other things.</small>
+      </div>
+    </div>
+  </header>
+  <hr />
+  <main class="limit-content-width flex">
+    <div class="only-block-style">
+      <h1 class="post-title">解决修改Bash Prompt后翻阅历史命令时显示错位</h1>
+      <small><time datetime="2023-07-10T02:55:00.000Z">2023年7月10日</time></small>
+      <p>在修改过<code>PS1</code>变量后，使用上下方向键翻阅历史命令时可能会出现命令将提示符覆盖掉的情况。</p>
+      <h2>方法</h2>
+      <p>将不可见字符（如ASCII颜色字符）用<code>\[\]</code>包起来。</p>
+      <p>例如：</p>
+      <p><code>PS1=\e[32m\$\e[0m&nbsp;</code> -> <code>PS1=\[\e[32m\]\$\[\e[0m\]&nbsp;</code></p>
+      <h2>原理</h2>
+      <p>Bash在覆盖当前行时会计算Prompt的长度，即使是不可见字符也会计算在内。<code>\[\]</code>的作用是让Bash不计算这部分字符的长度。</p>
+      <h2>参考资料</h2>
+      <ul>
+        <li><a href="https://unix.stackexchange.com/questions/31642/bash-prompt-command-messing-up-scroll-history-display">Bash $PROMPT_COMMAND messing up scroll history display</a></li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div class="copyright">Copyright &copy; 2023 sjdhome</div>
+  </footer>
+</body>
+
+</html>
