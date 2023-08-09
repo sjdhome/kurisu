@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sjdhome.com/blog/</id>
     <title>sjdhome blog</title>
-    <updated>2023-07-10T02:55:00.000Z</updated>
+    <updated>2023-08-09T02:51:00.000Z</updated>
     <author>
         <name>sjdhome</name>
         <uri>https://sjdhome.com/</uri>
@@ -13,6 +13,16 @@
     <logo>https://sjdhome.com/img/earth.jpg</logo>
     <icon>https://sjdhome.com/favicon.ico</icon>
     <rights>sjdhome © 2023</rights>
+    <entry>
+        <title type="html"><![CDATA[解决GNOME桌面环境下Chromium系浏览器全屏时有横线闪烁]]></title>
+        <id>https://sjdhome.com/blog/post/chromium-fullscreen-tearing-under-gnome/</id>
+        <link href="https://sjdhome.com/blog/post/chromium-fullscreen-tearing-under-gnome/"/>
+        <updated>2023-08-09T02:51:00.000Z</updated>
+        <summary type="html"><![CDATA[GNOME桌面环境下Chromium系浏览器在全屏播放视频或动图时会出现横线闪烁，影响观感。]]></summary>
+        <content type="html"><![CDATA[<p>请前往 <a href="https://sjdhome.com/blog/post/chromium-fullscreen-tearing-under-gnome/">https://sjdhome.com/blog/post/chromium-fullscreen-tearing-under-gnome/</a> 阅读全文</p>]]></content>
+        <category label="无"/>
+        <published>2023-08-09T02:51:00.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[解决修改Bash Prompt后翻阅历史命令时显示错位]]></title>
         <id>https://sjdhome.com/blog/post/bash-prompt-mess-up-scroll-history-display/</id>
