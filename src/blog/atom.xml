@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sjdhome.com/blog/</id>
     <title>sjdhome blog</title>
-    <updated>2023-08-09T02:51:00.000Z</updated>
+    <updated>2023-08-14T07:14:00.000Z</updated>
     <author>
         <name>sjdhome</name>
         <uri>https://sjdhome.com/</uri>
@@ -13,6 +13,16 @@
     <logo>https://sjdhome.com/img/earth.jpg</logo>
     <icon>https://sjdhome.com/favicon.ico</icon>
     <rights>sjdhome © 2023</rights>
+    <entry>
+        <title type="html"><![CDATA[评论功能正式启用]]></title>
+        <id>https://sjdhome.com/blog/post/now-with-comments/</id>
+        <link href="https://sjdhome.com/blog/post/now-with-comments/"/>
+        <updated>2023-08-14T07:14:00.000Z</updated>
+        <summary type="html"><![CDATA[采用giscus作为评论系统。]]></summary>
+        <content type="html"><![CDATA[<p>请前往 <a href="https://sjdhome.com/blog/post/post/now-with-comments/">https://sjdhome.com/blog/post/post/now-with-comments/</a> 阅读全文</p>]]></content>
+        <category label="无"/>
+        <published>2023-08-14T07:14:00.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[解决GNOME桌面环境下Chromium系浏览器全屏时有横线闪烁]]></title>
         <id>https://sjdhome.com/blog/post/chromium-fullscreen-tearing-under-gnome/</id>
