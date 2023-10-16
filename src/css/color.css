@@ -1,9 +1,0 @@
-.bg-color-accent {
-  background-color: dodgerblue;
-}
-
-@media (prefers-color-scheme: dark) {
-  .bg-color-accent {
-    background-color: deepskyblue;
-  }
-}
