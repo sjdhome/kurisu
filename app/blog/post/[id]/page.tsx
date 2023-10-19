@@ -2,6 +2,15 @@ import type { PostMetadata } from "@/app/_types/PostMetadata";
 import Giscus from "@/app/_components/Giscus";
 import { marked } from "marked";
 
+export async function generateMetadata({ params }: { params: { id: string } }) {
+  let response = await fetch(`https://api.sjdhome.com/blog/post/${params.id}`);
+  const postMetadata: PostMetadata = await response.json();
+  return {
+    title: `${postMetadata.title} - sjdhome blog`,
+    description: postMetadata.description,
+  };
+}
+
 export default async function Page({ params }: { params: { id: string } }) {
   let response = await fetch(`https://api.sjdhome.com/blog/post/${params.id}`);
   if (response.status === 404) {
@@ -9,7 +18,7 @@ export default async function Page({ params }: { params: { id: string } }) {
   }
   const postMetadata: PostMetadata = await response.json();
   response = await fetch(
-    `https://api.sjdhome.com/blog/post/${params.id}/content`
+    `https://api.sjdhome.com/blog/post/${params.id}/content`,
   );
   const markdown = await response.text();
   const html = marked(markdown);

@@ -13,7 +13,12 @@ export default function Navigator() {
           ["/blog/atom.xml", "📰 RSS 订阅"],
         ].map(([href, text]) => (
           <li key={href} className="list-none">
-            <Link href={href} className="text-inherit py-2 block no-underline hover:bg-[#ccc] w-full">{text}</Link>
+            <Link
+              href={href}
+              className="text-inherit py-2 block no-underline hover:bg-[#ccc] w-full"
+            >
+              {text}
+            </Link>
           </li>
         ))}
       </ul>

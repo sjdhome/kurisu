@@ -14,8 +14,12 @@ export default function PostLayout({
         <BlogHeader />
       </header>
       <hr className="m-0 border-none h-px bg-[#ccc]" />
-      <div className={`flex flex-col lg:flex-row max-w-5xl mx-auto px-4 ${styles.post}`}>
-        <Block border={false} className="w-full">{children}</Block>
+      <div
+        className={`flex flex-col lg:flex-row max-w-5xl mx-auto px-4 ${styles.post}`}
+      >
+        <Block border={false} className="w-full">
+          {children}
+        </Block>
       </div>
       <footer className="text-center mt-12 mb-8">
         <Copyright />
