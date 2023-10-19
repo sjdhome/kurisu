@@ -1,21 +1,14 @@
-.button {
-  border-radius: 12px;
-  border: 1px solid #ccc;
-  transition: box-shadow 0.3s ease-in-out;
-  padding: 0.75rem 1.5rem;
-  font-size: larger;
-}
+@tailwind components;
+@tailwind utilities;
 
-.button:active {
-  color: #aaa;
-}
-
-@media (prefers-color-scheme: light) and (pointer: fine) {
-  .button:hover {
-    box-shadow: 0 5px 16px lightgray;
+@layer utilities {
+  .button {
+    @apply rounded-[12px] border border-solid border-[#ccc] dark:border-transparent transition-shadow duration-300 py-3 px-6 text-lg;
+    @apply hover:shadow-md active:shadow-sm dark:hover:shadow-none dark:active:shadow-none;
   }
 
   .button:active {
-    box-shadow: 0 3px 8px lightgray;
+    @apply text-[#aaa]
   }
 }
+

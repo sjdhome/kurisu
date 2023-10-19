@@ -6,7 +6,7 @@ export default function PostCard({ post }: { post: PostMetadata }) {
   const created = new Date(post.created);
   const edited = new Date(post.edited);
   return (
-    <Block border={true}>
+    <Block border={true} className="dark:bg-[#252d38]">
       <Link href={`/blog/post/${post.id}`} className="text-inherit">
         <h1 className="mt-0 mb-2 text-3xl">{post.title}</h1>
       </Link>

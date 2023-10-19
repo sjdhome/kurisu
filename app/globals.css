@@ -1,6 +1,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  body {
+    @apply dark:bg-[#181c27] dark:text-white;
+  }
+}
+
 body {
   margin: 0;
   font-family:
@@ -19,6 +25,7 @@ body {
     "Segoe UI Symbol",
     "Noto Color Emoji";
   box-sizing: border-box;
+  color-scheme: light dark;
 }
 
 a:active {

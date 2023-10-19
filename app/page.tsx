@@ -13,10 +13,10 @@ export default function Page() {
         <small>愿你有一天能与重要的人重逢</small>
         <div className="flex flex-row justify-center mt-12 gap-x-4">
           <Link href="/blog/post/about-me/" className="no-underline text-white">
-            <Button className={`${styles.skyblue}`}>关于我</Button>
+            <Button className="bg-[dodgerblue] dark:bg-[dodgerblue]">关于我</Button>
           </Link>
           <Link href="/blog/" className="no-underline text-inherit">
-            <Button>博客</Button>
+            <Button className="dark:bg-[#252d38]">博客</Button>
           </Link>
         </div>
       </main>

@@ -20,7 +20,7 @@ export default function Page({
       <header>
         <BlogHeader />
       </header>
-      <hr className="m-0 border-none h-px bg-[#ccc]" />
+      <hr className="m-0 border-none h-px bg-[#ccc] dark:bg-transparent" />
       <div className="flex flex-col lg:flex-row max-w-5xl mx-auto px-4">
         <main className="basis-2/3">
           <PostList searchParams={searchParams} />
