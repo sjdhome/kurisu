@@ -5,7 +5,7 @@
 }
 
 .block-border {
-	border-radius: 12px;
+  border-radius: 12px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,11 +29,4 @@
   .block-border:hover {
     box-shadow: 0 5px 16px lightgray;
   }
-}
-
-.block-border h1,
-.block-border h2,
-.block-border h3 {
-  font-weight: 700;
-  margin: 0.5rem 0;
 }

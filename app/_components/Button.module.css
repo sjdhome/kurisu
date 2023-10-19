@@ -1,22 +1,21 @@
 .button {
-	border-radius: 12px;
-	background-color: white;
-	border: 1px solid #ccc;
-	transition: box-shadow 0.3s ease-in-out;
-	padding: 0.75rem 1.5rem;
-	font-size: larger;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 0.75rem 1.5rem;
+  font-size: larger;
 }
 
 .button:active {
-	color: #aaa;
+  color: #aaa;
 }
 
 @media (prefers-color-scheme: light) and (pointer: fine) {
-	.button:hover {
-		box-shadow: 0 5px 16px lightgray;
-	}
+  .button:hover {
+    box-shadow: 0 5px 16px lightgray;
+  }
 
-	.button:active {
-		box-shadow: 0 3px 8px lightgray;
-	}
+  .button:active {
+    box-shadow: 0 3px 8px lightgray;
+  }
 }

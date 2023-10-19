@@ -1,0 +1,8 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.post h1 {
+		@apply mt-0 text-3xl;
+	}
+}

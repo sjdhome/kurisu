@@ -1,41 +1,38 @@
-import { useState } from "react";
+import type { Metadata } from "next";
 import BlogHeader from "../_components/BlogHeader";
 import Copyright from "../_components/Copyright";
 import Navigator from "../_components/Navigator";
+import PostList from "../_components/PostList";
 import Search from "../_components/Search";
-import { PostMetadata } from "../_types/PostMetadata";
-import PostCard from "../_components/PostCard";
 
-export default function Page({ posts }: { posts: PostMetadata[] }) {
-  const [search, setSearch] = useState("");
-  const filteredPosts = posts.filter((post) =>
-    post.title.toLowerCase().includes(search.toLowerCase())
-  );
+export const metadata: Metadata = {
+  title: "sjdhome blog",
+  description: "我的个人博客，记录编程知识和生活感想。",
+};
+
+export default function Page({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) {
   return (
     <>
       <header>
         <BlogHeader />
       </header>
-      <hr />
-      <div>
-        <main>
-          {filteredPosts.length === 0 ? (
-            <p>没有找到相关文章。</p>
-          ) : (
-            filteredPosts.map((post) => <PostCard key={post.id} post={post} />)
-          )}
+      <hr className="m-0 border-none h-px bg-[#ccc]" />
+      <div className="flex flex-col lg:flex-row max-w-5xl mx-auto px-4">
+        <main className="basis-2/3">
+          <PostList searchParams={searchParams} />
         </main>
-        <aside>
-          <Search
-            value={search}
-            onChange={(event) => {
-              setSearch(event.target.value);
-            }}
-          />
-          <Navigator />
+        <aside className="basis-1/3">
+          <div className="lg:sticky lg:top-4">
+            <Search />
+            <Navigator />
+          </div>
         </aside>
       </div>
-      <footer>
+      <footer className="text-center mt-12 mb-8">
         <Copyright />
       </footer>
     </>

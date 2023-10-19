@@ -1,12 +1,10 @@
-import { Timestamp } from "./Timestamp";
-
 type PostMetadata = {
-	id: string;
+  id: string;
   title: string;
-  created: Timestamp;
-  edited: Timestamp;
-  author: string | string[];
-  tags: string[]; // TODO: Not use for now.
+  created: string;
+  edited: string;
+  author: string;
+  tags: string[];
   description: string;
   showComment: boolean;
   visible: boolean;
