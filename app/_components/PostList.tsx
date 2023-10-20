@@ -16,6 +16,11 @@ export default async function PostList({
         .includes((searchParams.q as string).toLowerCase()),
     );
   }
+  posts.sort((a, b) => {
+    const aDate = new Date(a.created);
+    const bDate = new Date(b.created);
+    return bDate.getTime() - aDate.getTime();
+  });
   return posts.length === 0 ? (
     <p>没有找到相关文章。</p>
   ) : (

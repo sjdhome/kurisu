@@ -4,6 +4,11 @@ import { marked } from "marked";
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
   let response = await fetch(`https://api.sjdhome.com/blog/post/${params.id}`);
+  if (response.status === 404) {
+    return {
+      title: "404 Not found - sjdhome blog",
+    };
+  }
   const postMetadata: PostMetadata = await response.json();
   return {
     title: `${postMetadata.title} - sjdhome blog`,
