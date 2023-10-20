@@ -17,7 +17,7 @@ export default function PostLayout({
       <div
         className={`flex flex-col lg:flex-row max-w-5xl mx-auto px-4 ${styles.post}`}
       >
-        <Block border={false} className="w-full">
+        <Block border={false} className="flex-1">
           {children}
         </Block>
       </div>
