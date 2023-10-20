@@ -41,7 +41,10 @@ export async function GET(request: Request): Promise<Response> {
           })
         )
       ).join("")}
-	</feed>`
+	</feed>`, {
+		collapseContent: true,
+		whiteSpaceAtEndOfSelfclosingTag: true,
+	}
     ),
     { headers: { "Content-Type": "application/xml; charset=utf-8" } }
   );
