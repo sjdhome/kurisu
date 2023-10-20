@@ -3,31 +3,18 @@
 
 @layer utilities {
   body {
-    @apply dark:bg-[#181c27] dark:text-white;
+    @apply dark:bg-[#181c27] dark:text-white font-sans box-border m-0;
+  }
+
+  code {
+    @apply font-mono bg-[#e6e8ee] py-0.5 px-1 mx-1 rounded-sm;
+  }
+
+  a {
+    @apply active:text-[#aaa]
   }
 }
 
 body {
-  margin: 0;
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    "Noto Sans",
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji";
-  box-sizing: border-box;
   color-scheme: light dark;
-}
-
-a:active {
-  color: #aaa;
 }
