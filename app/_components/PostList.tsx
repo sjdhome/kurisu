@@ -1,4 +1,5 @@
 import type { PostMetadata } from "../_types/PostMetadata";
+import { getAllPosts } from "../_utils/post";
 import PostCard from "./PostCard";
 
 export default async function PostList({
@@ -6,9 +7,8 @@ export default async function PostList({
 }: {
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
-  let posts: PostMetadata[] = await (
-    await fetch("https://api.sjdhome.com/blog/post/")
-  ).json();
+  let posts: PostMetadata[] = await getAllPosts();
+  posts = posts.filter((post) => post.visible === true);
   if (searchParams !== undefined && searchParams.q !== undefined) {
     posts = posts.filter((post) =>
       post.title
@@ -16,12 +16,6 @@ export default async function PostList({
         .includes((searchParams.q as string).toLowerCase()),
     );
   }
-  posts = posts.filter((post) => post.visible === true);
-  posts.sort((a, b) => {
-    const aDate = new Date(a.created);
-    const bDate = new Date(b.created);
-    return (bDate.getTime() + (b.pinToTop ? 9999 : 0)) - (aDate.getTime() + (a.pinToTop ? 9999 : 0));
-  });
   return posts.length === 0 ? (
     <p>没有找到相关文章。</p>
   ) : (
