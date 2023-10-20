@@ -3,7 +3,7 @@ import type { PostMetadata } from "../_types/PostMetadata";
 async function getAllPosts(): Promise<PostMetadata[]> {
   let posts: PostMetadata[] = await (
     await fetch("https://api.sjdhome.com/blog/post/", {
-      next: { revalidate: 500 },
+      cache: "no-store",
     })
   ).json();
   posts.sort((a, b) => {
@@ -20,7 +20,7 @@ async function getAllPosts(): Promise<PostMetadata[]> {
 
 async function getPost(id: string): Promise<PostMetadata | null> {
   let response = await fetch(`https://api.sjdhome.com/blog/post/${id}`, {
-    next: { revalidate: 500 },
+    cache: "no-store",
   });
   if (!response.ok) {
     return null;
@@ -33,7 +33,7 @@ async function getPostContent(id: string): Promise<string | null> {
   const response = await fetch(
     `https://api.sjdhome.com/blog/post/${id}/content`,
     {
-      next: { revalidate: 500 },
+      cache: "no-store",
     }
   );
   if (!response.ok) {
