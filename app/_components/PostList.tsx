@@ -16,10 +16,11 @@ export default async function PostList({
         .includes((searchParams.q as string).toLowerCase()),
     );
   }
+  posts = posts.filter((post) => post.visible === true);
   posts.sort((a, b) => {
     const aDate = new Date(a.created);
     const bDate = new Date(b.created);
-    return bDate.getTime() - aDate.getTime();
+    return (bDate.getTime() + (b.pinToTop ? 9999 : 0)) - (aDate.getTime() + (a.pinToTop ? 9999 : 0));
   });
   return posts.length === 0 ? (
     <p>没有找到相关文章。</p>
