@@ -9,29 +9,29 @@ export async function GET(request: Request): Promise<Response> {
     formatXml(
       `<?xml version="1.0" encoding="utf-8"?>
 			<feed xmlns="http://www.w3.org/2005/Atom">
-			<id>https://sjdhome.com/blog/</id>
+			<id>https://www.sjdhome.com/blog/</id>
 			<title>sjdhome blog</title>
 			<updated>${posts[0].edited}</updated>
 			<author>
 					<name>sjdhome</name>
-					<uri>https://sjdhome.com/</uri>
+					<uri>https://www.sjdhome.com/</uri>
 			</author>
-			<link rel="alternate" href="https://sjdhome.com/blog/"/>
-			<link rel="self" href="https://sjdhome.com/blog/atom.xml"/>
+			<link rel="alternate" href="https://www.sjdhome.com/blog/"/>
+			<link rel="self" href="https://www.sjdhome.com/blog/atom.xml"/>
 			<subtitle>愿你有一天能与重要的人重逢</subtitle>
 			<logo>https://r2.sjdhome.com/img/earth.jpg</logo>
-			<icon>https://sjdhome.com/favicon.ico</icon>
+			<icon>https://www.sjdhome.com/favicon.ico</icon>
 			<rights>sjdhome © 2023</rights>
 			${(
         await Promise.all(
           posts.map(async (post) => {
             const content =
               (await getPostContent(post.id)) ??
-              `<p>请前往 <a href="https://sjdhome.com/blog/post/${post.id}/">https://sjdhome.com/blog/post/${post.id}/</a> 阅读全文</p>`;
+              `<p>请前往 <a href="https://www.sjdhome.com/blog/post/${post.id}/">https://www.sjdhome.com/blog/post/${post.id}/</a> 阅读全文</p>`;
             return `<entry>
 					<title type="html"><![CDATA[${post.title}]]></title>
-					<id>https://sjdhome.com/blog/post/${post.id}/</id>
-					<link href="https://sjdhome.com/blog/post/${post.id}/"/>
+					<id>https://www.sjdhome.com/blog/post/${post.id}/</id>
+					<link href="https://www.sjdhome.com/blog/post/${post.id}/"/>
 					<updated>${post.edited}</updated>
 					<summary type="html"><![CDATA[${post.description}]]></summary>
 					<content type="html"><![CDATA[${marked(content)}]]></content>
