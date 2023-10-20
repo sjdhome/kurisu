@@ -7,7 +7,7 @@
   }
 
   code {
-    @apply font-mono bg-[#e6e8ee] py-0.5 px-1 mx-1 rounded-sm;
+    @apply font-mono bg-[#e6e8ee] py-0.5 px-1 mx-1 rounded-sm dark:bg-[#333];
   }
 
   a {
