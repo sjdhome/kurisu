@@ -7,7 +7,7 @@
   }
 
   .block-border {
-    @apply rounded-[12px] border-solid border-[#ccc] dark:border-transparent shadow-lg dark:shadow-none transition-shadow duration-300 ease-in-out;
+    @apply rounded-[12px] border-solid border-[#ccc] dark:border-transparent shadow-none transition-shadow duration-300 ease-in-out;
   }
 
   .block-border:hover {

@@ -4,7 +4,7 @@
 @layer utilities {
   .button {
     @apply rounded-[12px] border border-solid border-[#ccc] dark:border-transparent transition-shadow duration-300 py-3 px-6 text-lg;
-    @apply hover:shadow-md active:shadow-sm dark:hover:shadow-none dark:active:shadow-none;
+    @apply hover:shadow-lg active:shadow-md dark:hover:shadow-none dark:active:shadow-none;
   }
 
   .button:active {
