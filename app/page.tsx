@@ -22,7 +22,7 @@ export default function Page() {
               </Button>
             </Link>
             <Link href="/blog/" className="no-underline text-inherit">
-              <Button className="dark:bg-[#252d38]">博客</Button>
+              <Button className="dark:bg-skk-dark">博客</Button>
             </Link>
           </div>
           <div>
@@ -30,7 +30,7 @@ export default function Page() {
               href="https://rational-zjh.sjdhome.com"
               className="no-underline text-inherit"
             >
-              <Button className="dark:bg-[#252d38]">
+              <Button className="dark:bg-skk-dark">
                 朋友rational-zjh的博客
               </Button>
             </Link>

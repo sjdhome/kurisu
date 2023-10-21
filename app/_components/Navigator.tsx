@@ -3,7 +3,7 @@ import Block from "./Block";
 
 export default function Navigator() {
   return (
-    <Block border={true} className="dark:bg-[#252d38]">
+    <Block border={true} className="dark:bg-skk-dark">
       <h3 className="mt-0">导航栏</h3>
       <ul className="p-0 m-0">
         {[

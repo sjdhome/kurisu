@@ -3,7 +3,7 @@
 
 @layer utilities {
   body {
-    @apply dark:bg-[#181c27] dark:text-white font-sans box-border m-0;
+    @apply dark:bg-skk-darker dark:text-white font-sans box-border m-0;
   }
 
   code {
@@ -15,7 +15,7 @@
   }
 
   blockquote {
-    @apply bg-[#f4f5f6] dark:bg-[#333] m-0 px-4 py-2 border-l-8 border-solid border-[#ddd];
+    @apply bg-[#f4f5f6] dark:bg-skk-dark m-0 px-4 py-2 border-l-8 border-0 dark:border-[#435266] border-solid border-[#ddd];
   }
 }
 

@@ -4,7 +4,7 @@ import { MOTTO } from "../_utils/constants";
 
 export default function BlogHeader() {
   return (
-    <div className="dark:bg-[#252d38]">
+    <div className="dark:bg-skk-dark">
       <div className="pt-20 pb-12 max-w-5xl mx-auto">
         <div className="flex flex-row items-center gap-x-4 mx-4">
           <Link href="/blog/">

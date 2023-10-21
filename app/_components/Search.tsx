@@ -3,7 +3,7 @@ import Block from "./Block";
 export default function Search() {
   return (
     <form action="/blog/" method="get">
-      <div className="flex rounded-[12px] border border-solid border-[#ccc] dark:border-transparent dark:bg-[#252d38] p-2 mx-2 my-4 items-center hover:shadow-lg transition-shadow duration-300">
+      <div className="flex rounded-[12px] border border-solid border-[#ccc] dark:border-transparent dark:bg-skk-dark p-2 mx-2 my-4 items-center hover:shadow-lg transition-shadow duration-300">
         <span>🔍</span>
         <input
           type="search"
