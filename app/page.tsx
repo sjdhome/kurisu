@@ -2,6 +2,7 @@ import Link from "next/link";
 import Avatar from "./_components/Avatar";
 import Button from "./_components/Button";
 import Copyright from "./_components/Copyright";
+import { MOTTO } from "./_utils/constants";
 
 export default function Page() {
   return (
@@ -9,7 +10,7 @@ export default function Page() {
       <main className="text-center mt-32">
         <Avatar width={128} height={128} className="rounded-full shadow-xl" />
         <h1>sjdhome</h1>
-        <small>愿你有一天能与重要的人重逢</small>
+        <small>{MOTTO}</small>
         <div className="flex flex-col mt-12 gap-y-10">
           <div className="flex flex-row gap-x-4 justify-center">
             <Link

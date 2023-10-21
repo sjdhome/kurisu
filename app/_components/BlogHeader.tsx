@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Avatar from "./Avatar";
+import { MOTTO } from "../_utils/constants";
 
 export default function BlogHeader() {
   return (
@@ -20,7 +21,7 @@ export default function BlogHeader() {
             >
               sjdhome blog
             </Link>
-            <small>愿你有一天能与重要的人重逢</small>
+            <small>{MOTTO}</small>
           </div>
         </div>
       </div>
