@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         "skk-dark": "#252d38",
         "skk-darker": "#181c27",
+        "skk-gray": "#f4f5f6",
+        "skk-deep-gray": "#ddd",
+        "skk-deep-gray-dark": "#435266",
       },
     },
   },

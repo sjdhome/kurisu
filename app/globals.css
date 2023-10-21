@@ -15,7 +15,7 @@
   }
 
   blockquote {
-    @apply bg-[#f4f5f6] dark:bg-skk-dark m-0 px-4 py-2 border-l-8 border-0 dark:border-[#435266] border-solid border-[#ddd];
+    @apply bg-skk-gray dark:bg-skk-dark m-0 px-4 py-2 border-l-8 border-0 dark:border-skk-deep-gray-dark border-solid border-skk-deep-gray;
   }
 }
 

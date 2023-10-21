@@ -3,6 +3,7 @@ import Giscus from "@/app/_components/Giscus";
 import { marked } from "marked";
 import { getPost, getPostContent } from "@/app/_utils/post";
 import { WEBSITE_DOMAIN } from "@/app/_utils/constants";
+import PostInfo from "@/app/_components/PostInfo";
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
   const postMetadata: PostMetadata | null = await getPost(params.id);
@@ -27,7 +28,8 @@ export default async function Page({ params }: { params: { id: string } }) {
   const html = marked(markdown);
   return (
     <>
-      <main dangerouslySetInnerHTML={{ __html: html }} className="mb-8" />
+      <main dangerouslySetInnerHTML={{ __html: html }} />
+      <PostInfo post={post} className="my-16" />
       {post.showComment ? (
         <Giscus
           repo={`sjdhome/${WEBSITE_DOMAIN}`}
