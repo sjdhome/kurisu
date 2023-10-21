@@ -13,5 +13,4 @@
   .block-border:hover {
     @apply shadow-lg dark:shadow-none;
   }
-
 }

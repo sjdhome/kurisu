@@ -2,7 +2,6 @@ import Link from "next/link";
 import Avatar from "./_components/Avatar";
 import Button from "./_components/Button";
 import Copyright from "./_components/Copyright";
-import styles from "./page.module.css";
 
 export default function Page() {
   return (
@@ -30,7 +29,9 @@ export default function Page() {
               href="https://rational-zjh.sjdhome.com"
               className="no-underline text-inherit"
             >
-              <Button className="dark:bg-[#252d38]">朋友rational-zjh的博客</Button>
+              <Button className="dark:bg-[#252d38]">
+                朋友rational-zjh的博客
+              </Button>
             </Link>
           </div>
         </div>
