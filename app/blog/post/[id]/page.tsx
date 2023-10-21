@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
     return {
       title: "404 Not found - sjdhome blog",
       description: "404 Not found",
-    }
+    };
   }
   return {
     title: `${postMetadata.title} - sjdhome blog`,
@@ -26,7 +26,7 @@ export default async function Page({ params }: { params: { id: string } }) {
   const html = marked(markdown);
   return (
     <>
-      <main dangerouslySetInnerHTML={{ __html: html }} />
+      <main dangerouslySetInnerHTML={{ __html: html }} className="mb-8" />
       {post.showComment ? (
         <Giscus
           repo="sjdhome/www.sjdhome.com"
