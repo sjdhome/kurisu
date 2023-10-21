@@ -15,7 +15,7 @@ export default function PostLayout({
       </header>
       <hr className="m-0 border-none h-px bg-[#ccc] dark:bg-transparent" />
       <div
-        className={`flex flex-col lg:flex-row max-w-5xl mx-auto px-4 ${styles.post}`}
+        className={`flex flex-col lg:flex-row max-w-5xl mx-auto ${styles.post}`}
       >
         <Block border={false} className="flex-1">
           {children}

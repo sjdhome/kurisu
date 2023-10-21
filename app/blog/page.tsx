@@ -21,7 +21,7 @@ export default function Page({
         <BlogHeader />
       </header>
       <hr className="m-0 border-none h-px bg-[#ccc] dark:bg-transparent" />
-      <div className="flex flex-col lg:flex-row max-w-5xl mx-auto px-4">
+      <div className="flex flex-col lg:flex-row max-w-5xl mx-auto">
         <main className="basis-2/3">
           <PostList searchParams={searchParams} />
         </main>
