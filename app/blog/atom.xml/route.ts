@@ -1,5 +1,5 @@
 import type { PostMetadata } from "@/app/_types/PostMetadata";
-import { BUCKET_DOMAIN, WEBSITE_DOMAIN } from "@/app/_utils/constants";
+import { RAW_DOMAIN, WEBSITE_DOMAIN } from "@/app/_utils/constants";
 import { getAllPosts, getPostContent } from "@/app/_utils/post";
 import { marked } from "marked";
 import formatXml from "xml-formatter";
@@ -20,7 +20,7 @@ export async function GET(request: Request): Promise<Response> {
 			<link rel="alternate" href="https://${WEBSITE_DOMAIN}/blog/"/>
 			<link rel="self" href="https://${WEBSITE_DOMAIN}/blog/atom.xml"/>
 			<subtitle>愿你有一天能与重要的人重逢</subtitle>
-			<logo>https://${BUCKET_DOMAIN}/img/earth.jpg</logo>
+			<logo>https://${RAW_DOMAIN}/img/earth.jpg</logo>
 			<icon>https://${WEBSITE_DOMAIN}/favicon.ico</icon>
 			<rights>sjdhome © 2023</rights>
 			${(
