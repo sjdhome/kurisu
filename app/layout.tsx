@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "我的个人网站兼功能入口。",
 };
 
-export const runtime = "edge";
+export const revalidate = 3600;
 
 export default function RootLayout({
   children,
