@@ -6,8 +6,6 @@ export const metadata: Metadata = {
   description: "我的个人网站兼功能入口。",
 };
 
-export const revalidate = 600;
-
 export default function RootLayout({
   children,
 }: {
