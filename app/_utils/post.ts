@@ -20,7 +20,7 @@ async function getAllPosts(): Promise<PostMetadata[]> {
 }
 
 async function getPost(id: string): Promise<PostMetadata | null> {
-  let response = await fetch(`https://${API_DOMAIN}/blog/post/${id}`);
+  let response = await fetch(`https://${API_DOMAIN}/blog/post/${id}/`);
   if (!response.ok) {
     return null;
   }
@@ -29,7 +29,7 @@ async function getPost(id: string): Promise<PostMetadata | null> {
 }
 
 async function getPostContent(id: string): Promise<string | null> {
-  const response = await fetch(`https://${API_DOMAIN}/blog/post/${id}/content`);
+  const response = await fetch(`https://${API_DOMAIN}/blog/post/${id}/content/`);
   if (!response.ok) {
     return null;
   }
