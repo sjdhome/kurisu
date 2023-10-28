@@ -6,7 +6,7 @@ type PostMetadata = {
   author: string;
   tags: string[];
   description: string;
-  showComment: boolean;
+  commentable: boolean;
   visible: boolean;
   pinToTop: boolean;
 };
