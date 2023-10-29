@@ -7,9 +7,11 @@ export default function PostCard({ post }: { post: PostMetadata }) {
   const edited = new Date(post.edited);
   return (
     <Block border={true} className="dark:bg-skk-dark">
-      <Link href={`/blog/post/${post.id}`} className="text-inherit">
-        <h1 className="mt-0 mb-2 text-3xl">{post.title}</h1>
-      </Link>
+      <h1 className="mt-0 mb-2 text-3xl">
+        <Link href={`/blog/post/${post.id}`} className="text-inherit">
+          {post.title}
+        </Link>
+      </h1>
       <small>
         {created.toLocaleDateString("zh-CN")}
         {post.created !== post.edited
