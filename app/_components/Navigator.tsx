@@ -11,6 +11,8 @@ export default function Navigator() {
           ["/", "🏠 主页"],
           ["https://github.com/sjdhome", "🐙 GitHub"],
           [`mailto:${EMAIL}`, "✉️ 电子邮件"],
+          ["https://twitter.com/sjdhome_com", "🐦 X (Twitter)"],
+          ["https://steamcommunity.com/id/sjdhome/", "🚂 Steam"],
           ["/blog/atom.xml", "📰 RSS 订阅"],
           ["/blog/post/friends/", "🔗 友情链接"],
           ["/blog/post/about-me/", "😀 关于我"],
