@@ -27,7 +27,7 @@ export default function Page({
         </main>
         <aside className="basis-1/3">
           <div className="lg:sticky lg:top-4">
-            <Search />
+            <Search searchParams={searchParams} />
             <Navigator />
           </div>
         </aside>

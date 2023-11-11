@@ -10,10 +10,14 @@ export default async function PostList({
   let posts: PostMetadata[] = await getAllPosts();
   posts = posts.filter((post) => post.visible === true);
   if (searchParams !== undefined && searchParams.q !== undefined) {
-    posts = posts.filter((post) =>
-      post.title
-        .toLowerCase()
-        .includes((searchParams.q as string).toLowerCase()),
+    posts = posts.filter(
+      (post) =>
+        post.title
+          .toLowerCase()
+          .includes((searchParams.q as string).toLowerCase()) ||
+        post.description
+          .toLowerCase()
+          .includes((searchParams.q as string).toLowerCase())
     );
   }
   return posts.length === 0 ? (
