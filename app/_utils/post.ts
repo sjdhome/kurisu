@@ -8,13 +8,17 @@ async function getAllPosts(): Promise<PostMetadata[]> {
     })
   ).json();
   posts.sort((a, b) => {
-    const aDate = new Date(a.created);
-    const bDate = new Date(b.created);
-    return (
-      bDate.getTime() +
-      (b.pinToTop ? 9999 : 0) -
-      (aDate.getTime() + (a.pinToTop ? 9999 : 0))
-    );
+    let at = new Date(a.created).getTime();
+    let bt = new Date(b.created).getTime();
+    // To keep order for posts that pin to top, I add very long seconds, long enough.
+    const gap = 100 /* years */ * 365 * 24 * 60 * 60;
+    if (a.pinToTop) {
+      at += gap;
+    }
+    if (b.pinToTop) {
+      bt += gap;
+    }
+    return bt - at;
   });
   return posts;
 }
@@ -35,7 +39,7 @@ async function getPostContent(id: string): Promise<string | null> {
     `https://${API_DOMAIN}/blog/post/${id}/content/`,
     {
       cache: "no-store",
-    },
+    }
   );
   if (!response.ok) {
     return null;
