@@ -7,5 +7,5 @@ export default function Button({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <span className={`${className} ${style.button}`}>{children}</span>;
+  return <div className={`${className} ${style.button}`}>{children}</div>;
 }
