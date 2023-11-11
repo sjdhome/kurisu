@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Block from "./Block";
+import { EMAIL } from "../_utils/constants";
 
 export default function Navigator() {
   return (
@@ -9,9 +10,10 @@ export default function Navigator() {
         {[
           ["/", "🏠 主页"],
           ["https://github.com/sjdhome", "🐙 GitHub"],
-          ["mailto:sjdhoome@gmail.com", "✉️ 电子邮件"],
+          [`mailto:${EMAIL}`, "✉️ 电子邮件"],
           ["/blog/atom.xml", "📰 RSS 订阅"],
           ["/blog/post/friends/", "🔗 友情链接"],
+          ["/blog/post/about-me/", "😀 关于我"],
         ].map(([href, text]) => (
           <li key={href} className="list-none">
             <Link

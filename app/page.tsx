@@ -12,13 +12,11 @@ export default function Page() {
         <h1>sjdhome</h1>
         <small>{MOTTO}</small>
         <div className="flex flex-row mt-12 gap-x-4 justify-center">
-          <Link href="/blog/post/about-me/" className="no-underline text-white">
-            <Button className="bg-[dodgerblue] dark:bg-[dodgerblue]">
-              关于我
-            </Button>
+          <Link href="/blog/" className="no-underline text-white">
+            <Button className="bg-[dodgerblue] dark:bg-[dodgerblue]">博客</Button>
           </Link>
-          <Link href="/blog/" className="no-underline text-inherit">
-            <Button className="dark:bg-skk-dark">博客</Button>
+          <Link href="https://chat.sjdhome.com" className="no-underline text-initial">
+            <Button className="dark:bg-skk-dark">ChatGPT</Button>
           </Link>
         </div>
       </main>
