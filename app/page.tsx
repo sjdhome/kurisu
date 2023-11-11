@@ -13,9 +13,14 @@ export default function Page() {
         <small>{MOTTO}</small>
         <div className="flex flex-row mt-12 gap-x-4 justify-center">
           <Link href="/blog/" className="no-underline text-white">
-            <Button className="bg-[dodgerblue] dark:bg-[dodgerblue]">博客</Button>
+            <Button className="bg-[dodgerblue] dark:bg-[dodgerblue]">
+              博客
+            </Button>
           </Link>
-          <Link href="https://chat.sjdhome.com" className="no-underline text-initial">
+          <Link
+            href="https://chat.sjdhome.com"
+            className="no-underline text-initial"
+          >
             <Button className="dark:bg-skk-dark">ChatGPT</Button>
           </Link>
         </div>

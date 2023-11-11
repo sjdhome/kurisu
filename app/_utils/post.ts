@@ -39,7 +39,7 @@ async function getPostContent(id: string): Promise<string | null> {
     `https://${API_DOMAIN}/blog/post/${id}/content/`,
     {
       cache: "no-store",
-    }
+    },
   );
   if (!response.ok) {
     return null;
