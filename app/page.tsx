@@ -11,30 +11,15 @@ export default function Page() {
         <Avatar width={128} height={128} className="rounded-full shadow-xl" />
         <h1>sjdhome</h1>
         <small>{MOTTO}</small>
-        <div className="flex flex-col mt-12 gap-y-10">
-          <div className="flex flex-row gap-x-4 justify-center">
-            <Link
-              href="/blog/post/about-me/"
-              className="no-underline text-white"
-            >
-              <Button className="bg-[dodgerblue] dark:bg-[dodgerblue]">
-                关于我
-              </Button>
-            </Link>
-            <Link href="/blog/" className="no-underline text-inherit">
-              <Button className="dark:bg-skk-dark">博客</Button>
-            </Link>
-          </div>
-          <div>
-            <Link
-              href="https://rational-zjh.sjdhome.com"
-              className="no-underline text-inherit"
-            >
-              <Button className="dark:bg-skk-dark">
-                朋友rational-zjh的博客
-              </Button>
-            </Link>
-          </div>
+        <div className="flex flex-row mt-12 gap-x-4 justify-center">
+          <Link href="/blog/post/about-me/" className="no-underline text-white">
+            <Button className="bg-[dodgerblue] dark:bg-[dodgerblue]">
+              关于我
+            </Button>
+          </Link>
+          <Link href="/blog/" className="no-underline text-inherit">
+            <Button className="dark:bg-skk-dark">博客</Button>
+          </Link>
         </div>
       </main>
       <footer className="text-center mt-20">
