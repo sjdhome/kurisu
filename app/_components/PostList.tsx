@@ -17,7 +17,7 @@ export default async function PostList({
           .includes((searchParams.q as string).toLowerCase()) ||
         post.description
           .toLowerCase()
-          .includes((searchParams.q as string).toLowerCase())
+          .includes((searchParams.q as string).toLowerCase()),
     );
   }
   return posts.length === 0 ? (
