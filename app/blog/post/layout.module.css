@@ -5,4 +5,8 @@
   .post h1 {
     @apply mt-0 text-2xl lg:text-3xl;
   }
+
+  .post code {
+    word-break: break-all;
+  }
 }
