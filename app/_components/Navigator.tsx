@@ -11,6 +11,7 @@ export default function Navigator() {
           ["https://github.com/sjdhome", "🐙 GitHub"],
           ["mailto:sjdhoome@gmail.com", "✉️ 电子邮件"],
           ["/blog/atom.xml", "📰 RSS 订阅"],
+          ["/blog/post/friends/", "🔗 友情链接"],
         ].map(([href, text]) => (
           <li key={href} className="list-none">
             <Link
