@@ -6,6 +6,7 @@ import formatXml from "xml-formatter";
 
 export async function GET(request: Request): Promise<Response> {
   let posts: PostMetadata[] = await getAllPosts();
+  posts = posts.filter((post) => post.visible);
   return new Response(
     formatXml(
       `<?xml version="1.0" encoding="utf-8"?>
@@ -39,15 +40,15 @@ export async function GET(request: Request): Promise<Response> {
 					<category label="${post.tags.join(" ")}"/>
 					<published>${post.created}</published>
 					</entry>`;
-          }),
+          })
         )
       ).join("")}
 	</feed>`,
       {
         collapseContent: true,
         whiteSpaceAtEndOfSelfclosingTag: true,
-      },
+      }
     ),
-    { headers: { "Content-Type": "application/xml; charset=utf-8" } },
+    { headers: { "Content-Type": "application/xml; charset=utf-8" } }
   );
 }
