@@ -26,6 +26,9 @@ export default function Navigator() {
             </Link>
           </li>
         ))}
+        <li className="list-none">
+          <a className="text-inherit py-2 block no-underline hover:bg-[#ccc] w-full" rel="me" href="https://mastodon.social/@sjdhome">🐘 Mastodon</a>
+        </li>
       </ul>
     </Block>
   );
