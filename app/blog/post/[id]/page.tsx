@@ -25,7 +25,7 @@ export default async function Page({ params }: { params: { id: string } }) {
   if (post === null || markdown === null) {
     return <p>404 Not found</p>;
   }
-  const html = marked(markdown);
+  const html = await marked.parse(markdown, { async: true });
   return (
     <>
       <main dangerouslySetInnerHTML={{ __html: html }} />
