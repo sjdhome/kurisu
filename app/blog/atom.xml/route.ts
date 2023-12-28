@@ -40,15 +40,15 @@ export async function GET(request: Request): Promise<Response> {
 					<category label="${post.tags.join(" ")}"/>
 					<published>${post.created}</published>
 					</entry>`;
-          })
+          }),
         )
       ).join("")}
 	</feed>`,
       {
         collapseContent: true,
         whiteSpaceAtEndOfSelfclosingTag: true,
-      }
+      },
     ),
-    { headers: { "Content-Type": "application/xml; charset=utf-8" } }
+    { headers: { "Content-Type": "application/xml; charset=utf-8" } },
   );
 }
