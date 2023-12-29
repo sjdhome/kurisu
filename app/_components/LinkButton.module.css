@@ -1,0 +1,10 @@
+.link-button {
+  @apply block rounded-[12px] border border-solid border-[#ccc]
+  dark:border-transparent transition-shadow duration-300
+  py-3 px-6 text-lg hover:shadow-lg active:shadow-md no-underline
+  dark:hover:shadow-none dark:active:shadow-none text-inherit;
+}
+
+.link-button:active {
+  @apply text-[#aaa];
+}
