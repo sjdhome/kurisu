@@ -7,16 +7,14 @@ export default function Block({
   className,
 }: {
   children: ReactNode;
-  border?: boolean;
+  border: boolean;
   className?: string;
 }) {
-  if (border === true) {
-    return (
-      <div className={`${styles.block} ${styles["block-border"]} ${className}`}>
-        {children}
-      </div>
-    );
-  } else {
-    return <div className={`${styles.block} ${className}`}>{children}</div>;
-  }
+  const borderClass = border ? " " + styles["block-border"] : "";
+  const extraClass = className !== undefined ? " " + className : "";
+  return (
+    <div className={`${styles.block}${borderClass}${extraClass}`}>
+      {children}
+    </div>
+  );
 }

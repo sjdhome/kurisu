@@ -1,16 +1,13 @@
-@tailwind components;
-@tailwind utilities;
+.block {
+  @apply p-4 mx-2 my-4 border border-solid border-transparent;
+}
 
-@layer components {
-  .block {
-    @apply p-4 mx-2 my-4 border border-solid border-transparent;
-  }
+.block-border {
+  @apply rounded-[12px] border-solid border-[#ccc]
+  dark:border-transparent shadow-none transition-shadow
+  duration-300 ease-in-out;
+}
 
-  .block-border {
-    @apply rounded-[12px] border-solid border-[#ccc] dark:border-transparent shadow-none transition-shadow duration-300 ease-in-out;
-  }
-
-  .block-border:hover {
-    @apply shadow-lg dark:shadow-none;
-  }
+.block-border:hover {
+  @apply shadow-lg dark:shadow-none;
 }
