@@ -12,13 +12,16 @@ export default function Page() {
         <small>{MOTTO}</small>
         <div className="flex flex-row mt-12 gap-x-4 justify-center">
           <LinkButton href="/blog/" className="bg-[dodgerblue] text-white">
-            博客
+            Blog
           </LinkButton>
           <LinkButton
             href="https://chat.sjdhome.com"
             className="dark:bg-skk-dark text-inherit"
           >
             ChatGPT
+          </LinkButton>
+          <LinkButton href="https://rss.sjdhome.com" className="dark:bg-skk-dark text-inherit">
+            Miniflux
           </LinkButton>
         </div>
       </main>
