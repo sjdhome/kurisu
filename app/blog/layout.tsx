@@ -1,8 +1,8 @@
-import React from "react";
+import { ReactNode } from "react";
 import BlogHeader from "../_components/BlogHeader";
 import Copyright from "../_components/Copyright";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <>
       <header>

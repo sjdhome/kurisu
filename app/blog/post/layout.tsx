@@ -1,11 +1,8 @@
 import Block from "@/app/_components/Block";
 import styles from "./layout.module.css";
+import { ReactNode } from "react";
 
-export default function PostLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function PostLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <div

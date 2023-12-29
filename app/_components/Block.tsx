@@ -1,4 +1,4 @@
-import React from "react";
+import { ReactNode } from "react";
 import styles from "./Block.module.css";
 
 export default function Block({
@@ -6,7 +6,7 @@ export default function Block({
   border,
   className,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   border?: boolean;
   className?: string;
 }) {
