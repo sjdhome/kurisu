@@ -52,5 +52,3 @@ export async function GET(request: Request): Promise<Response> {
     { headers: { "Content-Type": "application/xml; charset=utf-8" } },
   );
 }
-
-export const dynamic = "force-dynamic";

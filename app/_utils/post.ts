@@ -4,7 +4,9 @@ import { API_DOMAIN } from "./constants";
 async function getAllPosts(): Promise<PostMetadata[]> {
   let posts: PostMetadata[] = await (
     await fetch(`https://${API_DOMAIN}/blog/post/`, {
-      cache: "no-store",
+      next: {
+        revalidate: 60,
+      },
     })
   ).json();
   posts.sort((a, b) => {
@@ -25,7 +27,9 @@ async function getAllPosts(): Promise<PostMetadata[]> {
 
 async function getPost(id: string): Promise<PostMetadata | null> {
   let response = await fetch(`https://${API_DOMAIN}/blog/post/${id}/`, {
-    cache: "no-store",
+    next: {
+      revalidate: 60,
+    },
   });
   if (!response.ok) {
     return null;
@@ -38,7 +42,9 @@ async function getPostContent(id: string): Promise<string | null> {
   const response = await fetch(
     `https://${API_DOMAIN}/blog/post/${id}/content/`,
     {
-      cache: "no-store",
+      next: {
+        revalidate: 60,
+      },
     },
   );
   if (!response.ok) {
