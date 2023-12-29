@@ -4,7 +4,7 @@ import styles from "./LinkButton.module.css";
 export default function LinkButton({
   children,
   href,
-  className
+  className,
 }: {
   children: ReactNode;
   href: string;
