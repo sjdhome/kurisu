@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Block from "./Block";
 import { EMAIL } from "../_utils/constants";
 
@@ -18,12 +17,12 @@ export default function Navigator() {
           ["/blog/post/about-me/", "😀 关于我"],
         ].map(([href, text]) => (
           <li key={href} className="list-none">
-            <Link
+            <a
               href={href}
               className="text-inherit py-2 block no-underline hover:bg-[#ccc] w-full"
             >
               {text}
-            </Link>
+            </a>
           </li>
         ))}
         <li className="list-none">
