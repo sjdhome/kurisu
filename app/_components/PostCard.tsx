@@ -13,7 +13,6 @@ export default function PostCard({ post }: { post: PostMetadata }) {
       </h1>
       <small>
         {created}
-        {post.created !== post.edited ? ` · ${edited}` : null}
       </small>
       <p className="mb-0 mt-4">{post.description}</p>
     </Block>
