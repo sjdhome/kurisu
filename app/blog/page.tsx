@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import BlogHeader from "../_components/BlogHeader";
-import Copyright from "../_components/Copyright";
 import Navigator from "../_components/Navigator";
 import PostList from "../_components/PostList";
 import Search from "../_components/Search";
@@ -17,10 +15,6 @@ export default function Page({
 }) {
   return (
     <>
-      <header>
-        <BlogHeader />
-      </header>
-      <hr className="m-0 border-none h-px bg-[#ccc] dark:bg-transparent" />
       <div className="flex flex-col lg:flex-row max-w-5xl mx-auto">
         <main className="basis-2/3">
           <PostList searchParams={searchParams} />
@@ -32,9 +26,6 @@ export default function Page({
           </div>
         </aside>
       </div>
-      <footer className="text-center mt-12 mb-8">
-        <Copyright />
-      </footer>
     </>
   );
 }
