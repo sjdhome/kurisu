@@ -16,7 +16,7 @@ export default function BlogHeader() {
           <div className="flex flex-col gap-y-2">
             <a
               href="/blog/"
-              className="no-underline text-inherit text-3xl font-bold"
+              className="no-underline hover:underline text-inherit text-3xl font-bold"
             >
               sjdhome blog
             </a>

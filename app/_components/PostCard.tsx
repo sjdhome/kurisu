@@ -7,7 +7,7 @@ export default function PostCard({ post }: { post: PostMetadata }) {
   return (
     <Block border={true} className="dark:bg-skk-dark">
       <h1 className="mt-0 mb-2 text-2xl lg:text-3xl">
-        <a href={`/blog/post/${post.id}`} className="text-inherit">
+        <a href={`/blog/post/${post.id}`} className="text-inherit no-underline hover:underline">
           {post.title}
         </a>
       </h1>
