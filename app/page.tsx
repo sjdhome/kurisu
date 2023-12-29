@@ -16,7 +16,7 @@ export default function Page() {
           </LinkButton>
           <LinkButton
             href="https://chat.sjdhome.com"
-            className="dark:bg-skk-dark"
+            className="dark:bg-skk-dark text-inherit"
           >
             ChatGPT
           </LinkButton>
