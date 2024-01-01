@@ -23,7 +23,7 @@ export async function GET(request: Request): Promise<Response> {
 			<subtitle>愿你有一天能与重要的人重逢</subtitle>
 			<logo>https://${RAW_DOMAIN}/img/earth.jpg</logo>
 			<icon>https://${WEBSITE_DOMAIN}/favicon.ico</icon>
-			<rights>sjdhome © 2023</rights>
+			<rights>sjdhome © 2023-2024</rights>
 			${(
         await Promise.all(
           posts.map(async (post) => {
