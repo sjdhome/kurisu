@@ -10,7 +10,7 @@ export default function Page() {
         <Avatar width={128} height={128} className="rounded-full shadow-xl" />
         <h1>sjdhome</h1>
         <small>{MOTTO}</small>
-        <div className="flex flex-row mt-12 gap-x-4 justify-center">
+        <div className="flex flex-row mt-8 gap-4 justify-center flex-wrap">
           <LinkButton href="/blog/" className="bg-[dodgerblue] text-white">
             Blog
           </LinkButton>
@@ -22,6 +22,9 @@ export default function Page() {
           </LinkButton>
           <LinkButton href="https://rss.sjdhome.com" className="dark:bg-skk-dark text-inherit">
             Miniflux
+          </LinkButton>
+          <LinkButton href="https://search.sjdhome.com" className="dark:bg-skk-dark text-inherit">
+            Whoogle
           </LinkButton>
         </div>
       </main>
