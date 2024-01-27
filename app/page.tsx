@@ -20,12 +20,6 @@ export default function Page() {
           >
             ChatGPT
           </LinkButton>
-          <LinkButton
-            href="https://rss.sjdhome.com"
-            className="dark:bg-skk-dark text-inherit"
-          >
-            Miniflux
-          </LinkButton>
         </div>
       </main>
       <footer className="text-center mt-20">
