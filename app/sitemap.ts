@@ -13,7 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...(await getAllPosts()).map((post) => {
       return {
         url: `https://${WEBSITE_DOMAIN}/blog/post/${post.id}/`,
-        lastModified: new Date(post.edited),
+        lastModified: new Date(post.modified * 1000),
       };
     }),
   ];

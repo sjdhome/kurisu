@@ -7,13 +7,16 @@ import formatXml from "xml-formatter";
 export async function GET(request: Request): Promise<Response> {
   let posts: PostMetadata[] = await getAllPosts();
   posts = posts.filter((post) => post.visible);
+	posts.sort((a: PostMetadata, b: PostMetadata) => {
+		return b.created - a.created;
+	});
   return new Response(
     formatXml(
       `<?xml version="1.0" encoding="utf-8"?>
 			<feed xmlns="http://www.w3.org/2005/Atom">
 			<id>https://${WEBSITE_DOMAIN}/blog/</id>
 			<title>sjdhome blog</title>
-			<updated>${posts[0].edited}</updated>
+			<updated>${new Date(posts[0].modified * 1000).toISOString()}</updated>
 			<author>
 					<name>sjdhome</name>
 					<uri>https://${WEBSITE_DOMAIN}/</uri>
@@ -34,11 +37,11 @@ export async function GET(request: Request): Promise<Response> {
 					<title type="html"><![CDATA[${post.title}]]></title>
 					<id>https://${WEBSITE_DOMAIN}/blog/post/${post.id}/</id>
 					<link href="https://${WEBSITE_DOMAIN}/blog/post/${post.id}/"/>
-					<updated>${post.edited}</updated>
+					<updated>${new Date(post.modified * 1000).toISOString()}</updated>
 					<summary type="html"><![CDATA[${post.description}]]></summary>
 					<content type="html"><![CDATA[${marked(content)}]]></content>
 					<category label="${post.tags.join(" ")}"/>
-					<published>${post.created}</published>
+					<published>${new Date(post.created * 1000).toISOString()}</published>
 					</entry>`;
           }),
         )
