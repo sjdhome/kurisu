@@ -30,7 +30,7 @@ export default async function Page({ params }: { params: { id: string } }) {
     <>
       <main dangerouslySetInnerHTML={{ __html: html }} />
       <PostInfo post={post} className="my-16" />
-      {post.commentable ? (
+      {post.enableComment ? (
         <Giscus
           repo={`sjdhome/${WEBSITE_DOMAIN}`}
           repoId="R_kgDOKG2diQ"

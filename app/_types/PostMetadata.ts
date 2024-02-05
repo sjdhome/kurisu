@@ -1,14 +1,13 @@
 type PostMetadata = {
   id: string;
   title: string;
-  created: string;
-  edited: string;
-  author: string;
+  created: number;
+  modified: number;
+  author: string[];
   tags: string[];
   description: string;
-  commentable: boolean;
+  enableComment: boolean;
   visible: boolean;
-  pinToTop: boolean;
 };
 
 export type { PostMetadata };

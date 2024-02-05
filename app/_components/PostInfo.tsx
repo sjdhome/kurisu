@@ -7,8 +7,8 @@ export default function PostInfo({
   post: PostMetadata;
   className?: string;
 }) {
-  const created = new Date(post.created).toLocaleDateString("zh-CN");
-  const edited = new Date(post.edited).toLocaleDateString("zh-CN");
+  const created = new Date(post.created * 1000).toLocaleDateString("zh-CN");
+  const modified = new Date(post.modified * 1000).toLocaleDateString("zh-CN");
   return (
     <div
       className={`rounded-xl bg-skk-gray dark:bg-skk-dark px-4 py-2 border border-solid border-skk-deep-gray dark:border-skk-deep-gray-dark ${className}`}
@@ -16,7 +16,7 @@ export default function PostInfo({
       <p>作者：{post.author}</p>
       <p>标签：{post.tags.join("、")}</p>
       <p>创作日期：{created}</p>
-      <p>编辑日期：{edited}</p>
+      <p>编辑日期：{modified}</p>
       <p>
         许可协议：
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">

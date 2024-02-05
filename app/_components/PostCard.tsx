@@ -2,8 +2,7 @@ import { PostMetadata } from "../_types/PostMetadata";
 import Block from "./Block";
 
 export default function PostCard({ post }: { post: PostMetadata }) {
-  const created = new Date(post.created).toLocaleDateString("zh-CN");
-  const edited = new Date(post.edited).toLocaleDateString("zh-CN");
+  const created = new Date(post.created * 1000).toLocaleDateString("zh-CN");
   return (
     <Block border={true} className="dark:bg-skk-dark">
       <h1 className="mt-0 mb-2 text-2xl lg:text-3xl">

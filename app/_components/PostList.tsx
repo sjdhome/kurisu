@@ -20,6 +20,9 @@ export default async function PostList({
           .includes((searchParams.q as string).toLowerCase()),
     );
   }
+  posts.sort((a: PostMetadata, b: PostMetadata) => {
+    return b.created - a.created;
+  });
   return posts.length === 0 ? (
     <p>没有找到相关文章。</p>
   ) : (
