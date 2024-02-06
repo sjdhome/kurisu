@@ -7,9 +7,9 @@ import formatXml from "xml-formatter";
 export async function GET(request: Request): Promise<Response> {
   let posts: PostMetadata[] = await getAllPosts();
   posts = posts.filter((post) => post.visible);
-	posts.sort((a: PostMetadata, b: PostMetadata) => {
-		return b.created - a.created;
-	});
+  posts.sort((a: PostMetadata, b: PostMetadata) => {
+    return b.created - a.created;
+  });
   return new Response(
     formatXml(
       `<?xml version="1.0" encoding="utf-8"?>
