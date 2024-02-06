@@ -13,7 +13,7 @@ export default function PostInfo({
     <div
       className={`rounded-xl bg-skk-gray dark:bg-skk-dark px-4 py-2 border border-solid border-skk-deep-gray dark:border-skk-deep-gray-dark ${className}`}
     >
-      <p>作者：{post.author}</p>
+      <p>作者：{post.author.join("、")}</p>
       <p>标签：{post.tags.join("、")}</p>
       <p>创作日期：{created}</p>
       <p>编辑日期：{modified}</p>
